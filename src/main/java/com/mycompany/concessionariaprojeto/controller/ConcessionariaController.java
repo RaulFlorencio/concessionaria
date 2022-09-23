@@ -4,7 +4,7 @@
  */
 package com.mycompany.concessionariaprojeto.controller;
 
-import com.mycompany.concessionariaprojeto.DAO.CarroDAO;
+import com.mycompany.concessionariaprojeto.dao.CarroDAO;
 import com.mycompany.concessionariaprojeto.model.Carro;
 import java.math.BigDecimal;
 import java.sql.SQLException;
