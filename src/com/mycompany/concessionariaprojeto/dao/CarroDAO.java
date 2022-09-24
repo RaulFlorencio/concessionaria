@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.concessionariaprojeto.dao;
-import com.mycompany.concessionariaprojeto.Conexao;
 import com.mycompany.concessionariaprojeto.model.Carro;
 import java.math.BigDecimal;
 import java.sql.Connection;

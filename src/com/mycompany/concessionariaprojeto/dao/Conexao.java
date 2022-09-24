@@ -1,4 +1,4 @@
-package com.mycompany.concessionariaprojeto;
+package com.mycompany.concessionariaprojeto.dao;
 
 import static java.lang.System.exit;
 import java.sql.Connection;
