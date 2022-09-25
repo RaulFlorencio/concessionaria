@@ -18,19 +18,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ConcessionariaController {
 
-    List<Carro> listaCarro;
-
-    public ConcessionariaController() {
-        listaCarro = new ArrayList<>();
-    }
-
     public void cadastrar(String marca, String modelo, BigDecimal preco) {
         try {
             Carro carro = new Carro(0, marca, modelo, preco);
             CarroDAO crDao = new CarroDAO();
             crDao.cadastrar(carro);
         } catch (SQLException ex) {
-            System.err.printf("nao foi possivel inserir carro" + ex.toString());
+            System.out.println("nao foi possivel inserir carro" + ex.toString());
         }
     }
 
@@ -49,7 +43,7 @@ public class ConcessionariaController {
                 dados.addRow(new Object[]{c.getId(), c.getModelo(), c.getMarca(), c.getPreco()});
             }
         } catch (SQLException ex) {
-            System.err.printf("nao foi possivel inserir carro" + ex.toString());
+            System.out.println("nao foi possivel inserir carro" + ex.toString());
         }
         return dados;
     }
@@ -59,7 +53,7 @@ public class ConcessionariaController {
             CarroDAO crDao = new CarroDAO();
             crDao.excluir(id);
         } catch (SQLException ex) {
-            System.err.printf("nao foi possivel excluir carro" + ex.toString());
+            System.out.println("nao foi possivel excluir carro" + ex.toString());
         }
     }
 }
